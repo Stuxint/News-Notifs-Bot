@@ -18,7 +18,7 @@ At the end list should end w/: Catch more news highlights from Url to news of ur
 GIVE ME NOTHING ELSE!!!!!!!!!!!!!!!!!
 """
 
-genai.configure(api_key="AIzaSyBFvev9GtvNMiTyXluAJ-kDNnUGdEgwwPY")
+genai.configure(api_key="Your API key")
 model = genai.GenerativeModel('gemini-2.0-flash')
 answer = model.generate_content([prompt], stream=False)
 highlights = answer.text.strip()
